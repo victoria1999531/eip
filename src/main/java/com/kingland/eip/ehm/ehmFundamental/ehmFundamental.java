@@ -13,6 +13,7 @@ public class ehmFundamental {
      * The number and  abbreviation  of the month
      */
     public static final int Month = 10;
+
  //1.Use Intellij to create a package called EhM, with the Improper printing of "Hello World" from a Java file called Primitive Altest.
     public static void main(String[] args) {
         System.out.println("hello world");
@@ -34,7 +35,8 @@ public class ehmFundamental {
         }
     }
 
-    /*2.Write the code using the Java file you just created, do the following, print the pattern below, and say Java Doc,
+    /*
+        2.Write the code using the Java file you just created, do the following, print the pattern below, and say Java Doc,
         Print the current date and time below the pattern (using LocalDate and LocalTime)
             **********
             *********
@@ -101,7 +103,8 @@ public class ehmFundamental {
         }
     }
 
-    /*4.Define a method called in the main function that defines a string "Good Morning,"
+    /*
+        4.Define a method called in the main function that defines a string "Good Morning,"
         Pass the string as an argument into the defined method. If the string contains a space and the first letter of the string is G,
         Divide the string with a space, type out the two separated words, and make one word a line (using the form for each),
         The length of "Good Morning" will be the return value of this method. Finally, in main function, if the length is even, the length of the string will be printed.
