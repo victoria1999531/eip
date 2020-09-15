@@ -33,13 +33,14 @@ public class ehmFundamental {
             System.out.println("The length of String is Odd number");
         }
     }
+
     /*2.Write the code using the Java file you just created, do the following, print the pattern below, and say Java Doc,
         Print the current date and time below the pattern (using LocalDate and LocalTime)
             **********
             *********
             ********
             *******
-            */
+      */
     /**
      * Flashbacks output stars and time
      */
@@ -53,6 +54,7 @@ public class ehmFundamental {
         }
         System.out.println("LocalDate is :" + LocalDate.now() + "LocalTime is :" + LocalTime.now());
     }
+
     //3.An immutable int variable is defined to represent the month,
     // the initial month is October, in different months output corresponding month abbreviations.
     /**
@@ -100,10 +102,10 @@ public class ehmFundamental {
     }
 
     /*4.Define a method called in the main function that defines a string "Good Morning,"
-    Pass the string as an argument into the defined method. If the string contains a space and the first letter of the string is G,
-    Divide the string with a space, type out the two separated words, and make one word a line (using the form for each),
-    The length of "Good Morning" will be the return value of this method. Finally, in main function, if the length is even, the length of the string will be printed.
-    If the length is odd, the output will be "odd string".
+        Pass the string as an argument into the defined method. If the string contains a space and the first letter of the string is G,
+        Divide the string with a space, type out the two separated words, and make one word a line (using the form for each),
+        The length of "Good Morning" will be the return value of this method. Finally, in main function, if the length is even, the length of the string will be printed.
+        If the length is odd, the output will be "odd string".
      */
     /**
      * If the original String meets the requirements,  every element in it will be printed out and return the he length of it
