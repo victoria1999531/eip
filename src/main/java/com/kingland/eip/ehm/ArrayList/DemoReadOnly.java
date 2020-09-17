@@ -1,3 +1,8 @@
+/*
+
+ * Copyright 2020 Kingland Systems Corporation. All Rights Reserved.
+
+ */
 package com.kingland.eip.ehm.ArrayList;
 
 import java.util.ArrayList;
