@@ -1,4 +1,4 @@
-package com.kingland.eip.ehm.ArrayLIst;
+package com.kingland.eip.ehm.ArrayList;
 
 import java.util.ArrayList;
 
