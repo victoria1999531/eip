@@ -4,6 +4,9 @@
 package com.kingland.eip.ehm.CompletionStage;
 
 public class Book {
+    /*
+     *The properties of the book
+     */
     private Long id;
     private String name;
     private Double score;

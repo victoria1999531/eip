@@ -11,6 +11,9 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 
 public class BookList {
+    /*
+     *API to get the List of books returned with ComplationStage<List<Book>>
+     */
     public static CompletionStage<List<Book>> getBookList() {
         return CompletableFuture.supplyAsync(() -> {
             List<Book> BookList = new ArrayList<>();
@@ -27,6 +30,9 @@ public class BookList {
 
 
     }
+    /*
+     *API to get book scores
+     */
     public static CompletionStage<Double> getScoreById(Long bookId) {
             Map<Long, Double> bookscore = new HashMap<>();
             bookscore.put(1L, 3.0);
