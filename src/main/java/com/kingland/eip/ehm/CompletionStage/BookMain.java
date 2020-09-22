@@ -7,12 +7,12 @@ import java.util.List;
 import java.util.concurrent.CompletionStage;
 public class BookMain {
     public static void main(String[] args)  {
-        CompletionStage<List<Book>> completableFuture = BookList.getBookList().thenApply(Booklist -> {
-            for (Book book :getBookList.BookList) {
+        CompletionStage<List<Book>> completableFuture = BookList.getBookList().thenApply(list -> {
+            for (Book book :list) {
                 BookList.getScoreById(book.getId()).thenAccept(score -> book.setScore(score));
                 }
-                System.out.println(BookList);
-                return Booklist;
+                System.out.println(list);
+                return list;
         });
 
         System.out.println(completableFuture);
