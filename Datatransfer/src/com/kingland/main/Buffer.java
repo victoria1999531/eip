@@ -1,4 +1,8 @@
-package com.kingland;
+/*
+ * Copyright 2020 Kingland Systems Corporation. All Rights Reserved.
+ */
+
+package com.kingland.main;
 
 import java.util.LinkedList;
 

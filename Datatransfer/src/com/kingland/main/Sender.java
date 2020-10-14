@@ -1,7 +1,9 @@
 /*
  * Copyright 2020 Kingland Systems Corporation. All Rights Reserved.
  */
-package com.kingland;
+package com.kingland.main;
+
+import com.kingland.main.Buffer;
 
 public class Sender implements Runnable {
     private Buffer buffer;

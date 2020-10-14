@@ -1,13 +1,9 @@
 /*
  * Copyright 2020 Kingland Systems Corporation. All Rights Reserved.
  */
-package com.kingland;
+package com.kingland.main;
 
-import com.kingland.Buffer;
-import com.kingland.Loader;
-import com.kingland.Sender;
-
-public class ApplicationTest {
+public class ApplicationMain {
     public static void main(String[] args) {
         Buffer buffer = new Buffer();
         Loader loader = new Loader(buffer);
