@@ -4,10 +4,7 @@
 package com.kingland;
 
 public class Loader implements Runnable {
-    //仓库对象
     private Buffer buffer;
-
-    //生产的数量
     private int num;
 
     public void setNum(int num) {
@@ -18,12 +15,12 @@ public class Loader implements Runnable {
         this.buffer = buffer;
     }
 
-    private void prodcut(int num) {
-        this.buffer.product(num);
+    private void loader(int num) {
+        this.buffer.loader(num);
     }
 
     public void run() {
-        this.prodcut(num);
+        this.loader(num);
     }
 }
 

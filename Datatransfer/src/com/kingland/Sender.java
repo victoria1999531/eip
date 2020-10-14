@@ -13,7 +13,7 @@ public class Sender implements Runnable {
     }
 
     private void sender(int num) {
-        this.buffer.custom(num);
+        this.buffer.sender(num);
     }
 
     public void run() {
