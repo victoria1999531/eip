@@ -3,24 +3,17 @@
  */
 package com.kingland.main;
 
-import com.kingland.main.Loader.Loader;
+import com.kingland.main.Buffer.Buffer;
+import com.kingland.main.Loader.ConsoleLoader;
+import com.kingland.main.Sender.ConsoleSender;
 
 public class ApplicationMain {
     public static void main(String[] args) {
-        Buffer buffer = new Buffer();
-        Loader loader = new Loader(buffer);
-        loader.setNum(100);
+        ConsoleSender consoleSender = new ConsoleSender();
+        ConsoleLoader consoleLoader = new ConsoleLoader();
+        Buffer buffer = new Buffer(consoleLoader, consoleSender);
 
-        Loader loader1 = new Loader(buffer);
-        loader1.setNum(100);
-
-        Sender sender = new Sender(buffer);
-
-        sender.setNum(90);
-
-
-        new Thread(loader).start();
-        new Thread(sender).start();
-        new Thread(loader1).start();
+        new Thread(() -> buffer.loader()).start();
+        new Thread(() -> buffer.sender()).start();
     }
 }
