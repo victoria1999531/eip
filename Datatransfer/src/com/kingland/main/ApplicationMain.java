@@ -3,6 +3,8 @@
  */
 package com.kingland.main;
 
+import com.kingland.main.Loader.Loader;
+
 public class ApplicationMain {
     public static void main(String[] args) {
         Buffer buffer = new Buffer();
